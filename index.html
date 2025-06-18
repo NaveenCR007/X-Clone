@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white relative font-poppins">
+    <div class="ai border z-50 h-13 w-13 rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.4)]
+ fixed bottom-5 right-5 cursor-pointer bg-black">
+        <img class="invert p-2" src="images/grok.svg" alt="">
+    </div>
+
+    <div class="flex h-full">
+        <div class="hidden sm:block h-screen relative w-1/6 overflow-y-auto">
+            <div
+                class="flex flex-col h-170 2xl:justify-start 2xl:items-start 2xl:ml-12 justify-end items-end w-full gap-4 my-2">
+                <div class="icons w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/logo.svg" alt="">
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/home.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Home</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/search.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Explore</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/bell.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Notifications</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/mail.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Messages</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/grok.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Grok</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/profile.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">Communities</span>
+                </div>
+                <div
+                    class="icons flex justify-between items-center w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="invert p-2 m-1" src="images/dots.svg" alt="">
+                    <span class="hidden 2xl:block font-bold">More</span>
+                </div>
+                <div
+                    class="icons 2xl:w-38 2xl:h-13 w-15 h-15 bg-white rounded-full mr-2 hover:bg-gray-300 cursor-pointer">
+                    <img class="p-3 m-1 2xl:hidden" src="images/tweet.svg" alt="">
+                    <span class="hidden 2xl:block text-black font-bold text-center py-3.5">Post</span>
+                </div>
+                <div class="icons w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                    <img class="p-2 m-0.2 rounded-full" src="images/profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+
+        <div class="h-screen w-full overflow-y-auto overflow-x-hidden flex">
+            <div class="w-4xl flex flex-col h-[270vh] border-gray-600 border border-y-0 gap-2 relative">
+                <div class="nav h-15 flex sm:flex-row flex-col sticky top-0 z-2 w-full">
+                    <div class="h-15 sm:hidden flex justify-between items-center border-none bg-black">
+                        <div class="icons w-13 h-13 rounded-full mr-3 hover:bg-gray-800 cursor-pointer">
+                            <img class="p-2 m-0.2 rounded-full" src="images/profile.jpg" alt="">
+                        </div>
+                        <div class="icon h-6 w-6 my2">
+                            <img class="invert" src="images/logo.svg" alt="">
+                        </div>
+                        <div class="subscribe h-10 w-30 rounded-3xl border border-gray-500 font-bold text-center p-2">
+                            Premium
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:flex w-full bg-black border-gray-600 border-b-1 backdrop-blur-3xl opacity-70">
+                        <div
+                            class="w-1/2 text-center py-4 font-bold cursor-pointer hover:bg-gray-600/50">
+                            For You
+                        </div>
+                        <div
+                            class="w-1/2 text-center py-4 cursor-pointer font-bold hover:bg-gray-600/50">
+                            Following
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post hidden sm:flex items-end w-full h-30  border-gray-600 border-b">
+                    <div class="profile w-1/8 h-30 flex flex-col justify-center items-center">
+                        <div class="pic h-12 w-12 rounded-full">
+                            <img class="cursor-pointer h-12 w-12 object-cover rounded-full filter hover:brightness-70"
+                                src="images/profile.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="search w-4/5 flex h-30 flex-col justify-between items-start">
+                        <input class="w-full px-1 text-start h-20 text-xl focus:outline-none" type="text"
+                            placeholder="What's Happening?">
+
+                        <div class="post-icons flex items-center justify-between w-full h-15">
+                            <div class="all-icons flex gap-2">
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/img-icon.svg" alt="">
+                                </div>
+
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/gif.svg" alt="">
+                                </div>
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/grok.svg" alt="">
+                                </div>
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/control.svg" alt="">
+                                </div>
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/smile.svg" alt="">
+                                </div>
+                                <div class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full">
+                                    <img class="invert p-0.2 m-1" src="images/task.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="post-tweet h-9 w-16 bg-gray-200 text-black text-center cursor-pointer hover:bg-gray-300 font-bold rounded-full pt-1.5">
+                                Post</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="og-post-fr flex flex-col space-y-6">
+                    <div class="real-post flex gap-2 mr-3 border-b-1 border-gray-500">
+                        <div class="admin-pic w-13 h-13 ml-3">
+                            <img class="cursor-pointer h-11 w-11 object-cover rounded-full filter hover:brightness-70"
+                                src="https://pbs.twimg.com/profile_images/1559752542372122624/6UiH4Ubt_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="start w-[90%]">
+                            <div class="desc flex gap-2">
+                                <h2 class="font-bold hover:underline hover:cursor-pointer">RVCJ Media</h2>
+                                <span
+                                    class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">@RVCJ_FB</span>
+                                <span class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">.</span>
+                                <span class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">6h
+                                    ago</span>
+                            </div>
+                            <span>Lucky day 👌💯</span>
+                            <div class="pic my-2 w-full flex justify-start">
+                                <video class="w-full h-full rounded-2xl group-hover:controls group-hover" muted autoplay
+                                    controls playsinline src="video/post1.mp4"></video>
+                            </div>
+                            <div class="end flex justify-between my-4">
+                                <div
+                                    class="flex items-center gap-1 hover:bg-[#1d9cf096] cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/message.svg" alt="">
+                                    <span class="text-gray-500 text-sm hover:text-blue-500">6</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-green-400 cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/retweet.svg" alt="">
+                                    <span class="text-gray-500 text-sm">13</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-red-400 cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/heart.svg" alt="">
+                                    <span class="text-gray-500 text-sm">360</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-[#1d9cf041] cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/reach.svg" alt="">
+                                    <span class="text-gray-500 text-sm">12k</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <div
+                                        class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full flex items-center justify-center">
+                                        <img class="invert w-4 h-4" src="images/bookmark.svg" alt="">
+                                    </div>
+                                    <div
+                                        class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full flex items-center justify-center">
+                                        <img class="invert w-4 h-4" src="images/share.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="real-post flex gap-2 mr-3">
+                        <div class="admin-pic w-13 h-13 ml-3">
+                            <img class="cursor-pointer h-11 w-11 object-cover rounded-full filter hover:brightness-70"
+                                src="images/harrybhai.jpg" alt="">
+                        </div>
+                        <div class="start w-[90%]">
+                            <div class="desc flex gap-2">
+                                <h2 class="font-bold hover:underline hover:cursor-pointer">CodeWithHarry</h2>
+                                <span
+                                    class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">@harrisalikhan</span>
+                                <span class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">.</span>
+                                <span class="text-gray-500 text-sm pt-0.5 hover:underline hover:cursor-pointer">1h
+                                    ago</span>
+                            </div>
+                            <span>Enjoying the weekend 👌</span>
+                            <div class="pic my-2 w-full flex justify-start">
+                                <img class="w-full h-full rounded-2xl object-cover" src="images/harrybhai2.jpg">
+                            </div>
+                            <div class="end flex justify-between">
+                                <div
+                                    class="flex items-center gap-1 hover:bg-[#1d9cf096] cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/message.svg" alt="">
+                                    <span class="text-gray-500 text-sm">60k</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-green-400 cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/retweet.svg" alt="">
+                                    <span class="text-gray-500 text-sm">100k</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-red-400 cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/heart.svg" alt="">
+                                    <span class="text-gray-500 text-sm">3M</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 hover:bg-[#1d9cf041] cursor-pointer rounded-full px-2 py-1">
+                                    <img class="invert w-4 h-4" src="images/reach.svg" alt="">
+                                    <span class="text-gray-500 text-sm">12M</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <div
+                                        class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full flex items-center justify-center">
+                                        <img class="invert w-4 h-4" src="images/bookmark.svg" alt="">
+                                    </div>
+                                    <div
+                                        class="h-7 w-7 hover:bg-[#1d9cf041] cursor-pointer rounded-full flex items-center justify-center">
+                                        <img class="invert w-4 h-4" src="images/share.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:block h-screen w-2xl relative">
+                <div class="flex flex-col my-3 mx-5 justify-start items-start w-full gap-4">
+                    <input
+                        class="focus:outline-blue-500 rounded-full w-88 h-10 border border-gray-500 font-medium text-center"
+                        type="text" placeholder="Search">
+
+                    <div class="flex justify-center items-start w-88 h-42 border rounded-lg border-gray-500">
+                        <span class="flex flex-col items-start m-3 gap-2">
+                            <h1 class="font-black text-xl">Subscribe to Premium</h1>
+                            <p class="">Subscribe to unlock new features and if eligible, receive a share of revenue.
+                            </p>
+                            <a class="w-30 h-9 rounded-full hover:brightness-90 bg-[#1D9BF0] text-center font-bold pt-1.5 mt-2"
+                                href="#">Subscribe</a>
+                        </span>
+                    </div>
+
+                    <div class="w-88 border border-gray-500 rounded-lg flex flex-col justify-center items-start">
+                        <h1 class="font-bold text-xl mx-4 my-3">What's happening</h1>
+                        <div class="trendings flex justify-between w-full hover:bg-gray-900/50 cursor-pointer">
+                            <div class="flex flex-col items-start my-3 mx-4 cursor-pointer">
+                                <p class="text-gray-500">Trending in india</p>
+                                <h2 class="font-bold">#ShameOnEd</h2>
+                                <p class="text-gray-500">1,234 posts</p>
+                            </div>
+                            <div class="dots w-8 h-8 mr-4 mt-3 hover:bg-[#1d9cf041] rounded-full">
+                                <img class="invert p-1" src="images/dots.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="trendings flex justify-between w-full hover:bg-gray-900/50 cursor-pointer">
+                            <div class="flex flex-col items-start my-3 mx-4 cursor-pointer">
+                                <p class="text-gray-500">Trending in india</p>
+                                <h2 class="font-bold">#SigmaBatchOP</h2>
+                                <p class="text-gray-500">1M posts</p>
+                            </div>
+                            <div class="dots w-8 h-8 mr-4 mt-3 hover:bg-[#1d9cf041] rounded-full">
+                                <img class="invert p-1" src="images/dots.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="trendings flex justify-between w-full hover:bg-gray-900/50 cursor-pointer">
+                            <div class="flex flex-col items-start my-3 mx-4 cursor-pointer">
+                                <p class="text-gray-500">Sports . Trending</p>
+                                <h2 class="font-bold">Virat Retirement</h2>
+                                <p class="text-gray-500">15k posts</p>
+                            </div>
+                            <div class="dots w-8 h-8 mr-4 mt-3 hover:bg-[#1d9cf041] rounded-full">
+                                <img class="invert p-1" src="images/dots.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="trendings flex justify-between w-full hover:bg-gray-900/50 cursor-pointer">
+                            <div class="flex flex-col items-start my-3 mx-4 cursor-pointer">
+                                <p class="text-gray-500">Tech . Coding</p>
+                                <h2 class="font-bold">CodeWithHarry's new DS Course</h2>
+                                <p class="text-gray-500">1,900 posts</p>
+                            </div>
+                            <div class="dots w-8 h-8 mr-4 mt-3 hover:bg-[#1d9cf041] rounded-full">
+                                <img class="invert p-1" src="images/dots.svg" alt="">
+                            </div>
+                        </div>
+                        <a class="text-[#1D9BF0] hover:underline mx-5 my-3" href="#">Show more</a>
+                    </div>
+
+                    <div class="sticky top-0 space-y-4">
+                        <div
+                            class="follow w-88 border border-gray-500 rounded-lg flex flex-col justify-center items-start">
+                            <h1 class="font-bold text-xl mx-5 my-2">Who to follow</h1>
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex justify-start w-fullcursor-pointer">
+                                    <div class="dots w-10 h-10 ml-5 mt-4 hover:bg-[#1d9cf041] rounded-full">
+                                        <img class="rounded-full" src="images/harrybhai.jpg" alt="">
+                                    </div>
+                                    <div class="flex flex-col items-start my-3 mx-2 cursor-pointer">
+                                        <h2 class="hover:underline font-bold">CodeWithHarry</h2>
+                                        <p class="hover:underline text-gray-500">@harrisalikhan</p>
+                                    </div>
+                                </div>
+                                <a class="w-25 mr-4 h-9 rounded-full hover:brightness-90 bg-white text-black text-center font-bold pt-1.5"
+                                    href="#">Follow</a>
+                            </div>
+    
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex justify-start w-fullcursor-pointer">
+                                    <div class="dots w-10 h-10 ml-5 mt-4 hover:bg-[#1d9cf041] rounded-full">
+                                        <img class="w-10 h-10 rounded-full" src="images/puma.png" alt="">
+                                    </div>
+                                    <div class="flex flex-col items-start my-3 mx-2 cursor-pointer">
+                                        <h2 class="hover:underline font-bold">PUMA Cricket</h2>
+                                        <p class="hover:underline text-gray-500">@pumacricket</p>
+                                    </div>
+                                </div>
+                                <a class="w-25 mr-4 h-9 rounded-full hover:brightness-90 bg-white text-black text-center font-bold pt-1.5"
+                                    href="#">Follow</a>
+                            </div>
+    
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex justify-start w-fullcursor-pointer">
+                                    <div class="dots w-10 h-10 ml-5 mt-4 hover:bg-[#1d9cf041] rounded-full">
+                                        <img class="rounded-full" src="images/apna college.jpg" alt="">
+                                    </div>
+                                    <div class="flex flex-col items-start my-3 mx-2 cursor-pointer">
+                                        <h2 class="hover:underline font-bold">Apna College</h2>
+                                        <p class="hover:underline text-gray-500">@apnacollege</p>
+                                    </div>
+                                </div>
+                                <a class="w-25 mr-4 h-9 rounded-full hover:brightness-90 bg-white text-black text-center font-bold pt-1.5"
+                                    href="#">Follow</a>
+                            </div>
+    
+                            <a class="text-[#1D9BF0] hover:underline mx-5 my-3" href="#">Show more</a>
+                        </div>
+    
+                        <div
+                            class="w-80 h-full border-gray-400 rounded-lg flex flex-wrap items-center justify-between mx-2">
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">Terms of Services</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">Privacy and Policy</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">Cookie Policy</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">Accessibility</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">Ads info</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="hover:underline text-[12px] hover:cursor-pointer text-gray-500">More...</p>
+                            <p class="text-gray-500 text-[12px]">|</p>
+                            <p class="text-[12px] text-gray-500">&copy;2025 X Corp.</p>
+                        </div>
+                    </div>
+
+                    <div class="h-10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
